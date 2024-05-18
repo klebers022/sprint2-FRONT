@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  "Poppins", sans-serif;
+}
+
+
+header{
+    background-color: #34B5E6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h1{
+        color: white;
+    }
+   
+}
+
+.login{
+    padding: 5px;
+    width: 100px;
+    font-size: 20px;
+    border-radius: 9px;
+    float: right;
+    margin: 30px;
+    border:none;
+   
+
+    a{
+        text-decoration: none;
+        font-weight: 600;
+        color:#34B5E6;
+    
+    }
+}
+
+.login:hover{
+    background-color: #1a3b5c;
+    transform: scale(1.1);
+    transition: all 0.9s ease;
+}
+
+.logo{
+    margin-left: 30px;
+}
+
+nav{
+
+    background-color:#eeeeee;
+
+    ul{
+        display: flex;
+       justify-content:space-evenly;
+       
+    }
+
+    li{
+        list-style: none;
+        padding: 6px;
+        
+        
+        a{
+            text-decoration: none;
+            font-weight: bold;
+            color: #1a3b5c;
+            
+            
+            
+        }
+
+        a:hover{
+            color: #34B5E6;
+            transition: all 0.3s ease;
+        }
+    }
+}
+
+.container-cadastro{
+    padding-top: 50px;
+    width: 70%;
+    margin: auto;
+    display: flex;
+    margin-bottom: 50px;
+    
+    
+
+}
+
+.text-cadastro{
+    background-color: black;
+    width: 45%;
+    text-align: center;
+    
+    img{
+        width: 200px;
+        margin-top: 30px;
+    }
+    p{
+        color: white;
+        padding: 8px;
+        margin-top: 20px;
+        font-size: 20px;
+    }
+}
+
+.input-cadastro{
+    text-align: center;
+    background-color: #34B5E6;
+    width: 55%;
+    color: white;
+
+    p{
+        
+        font-size: 30px;
+        margin-top: 20px;
+        padding: 40px;
+        display: inline-block;
+    }
+
+    #registro{
+        filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.26));
+        
+        
+    }
+
+    #login{
+        filter: blur(0.9px);
+    }
+
+    input{
+        display: block;
+        margin: auto;
+        width: 70%;
+        height: 40px;
+        margin-top: 30px;
+        border-radius: 5px;
+        border: none;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.26);
+        padding: 15px;
+
+    }
+
+    #idbotao{
+        background-color: #1a3b5c;
+        width: 50%;
+        border-radius: 50px;
+        color: white;
+        font-weight: bolder;
+        font-size: 19px;
+        margin-bottom: 30px;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.26);
+        padding: 5px;
+    }
+
+}
