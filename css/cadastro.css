@@ -83,6 +83,7 @@ nav{
     margin: auto;
     display: flex;
     margin-bottom: 50px;
+
     
     
 
@@ -98,7 +99,7 @@ nav{
         margin-top: 30px;
     }
     p{
-        color: white;
+        color: rgb(255, 255, 255);
         padding: 8px;
         margin-top: 20px;
         font-size: 20px;
@@ -155,3 +156,80 @@ nav{
     }
 
 }
+
+    @media screen and (min-width: 768px) and (max-width: 991px){
+   
+       
+
+        .input-cadastro{
+            text-align: center;
+            background-color: #34B5E6;
+            width: 55%;
+            color: white;
+        
+            p{
+                
+                font-size: 25px;
+                margin-top: 20px;
+                padding: 30px;
+                display: inline-block;
+            }
+        
+           
+    
+    }}
+    
+    @media screen and (min-width: 576px) and (max-width: 767px){
+
+      
+        .input-cadastro{
+            text-align: center;
+            background-color: #34B5E6;
+            width: 55%;
+            color: white;
+        
+            p{
+                
+                font-size: 20px;
+                margin-top: 20px;
+                padding: 20px;
+                display: inline-block;
+            }
+
+            #idbotao{
+                font-size: 15px;
+            }
+            
+
+              
+        
+        
+    }}
+    
+    /* celular */
+    
+    @media screen and (max-width: 576px){
+    
+        
+        .container-cadastro{
+            width: 95%;
+        }
+
+        .text-cadastro{
+            img{
+                width: 150px;
+            }
+            p{
+                font-size: 16px;
+            }
+        }
+
+        .input-cadastro{
+            p{
+                font-size: 25px;
+                padding: 10px;
+            }
+        }
+        
+        
+    }
