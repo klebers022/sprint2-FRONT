@@ -157,6 +157,15 @@ nav{
 
 }
 
+@media screen and (min-width: 1200px) {
+    .container-cadastro{
+        width: 70%;
+       
+    }
+
+   
+}
+
     @media screen and (min-width: 768px) and (max-width: 991px){
    
        
