@@ -81,7 +81,8 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    
+    
   
     
     
@@ -90,7 +91,7 @@ nav{
 .titulo-participante{
     text-align: center;
     font-size: 60px;
-   
+    
 }
 
 .card-participantes{
@@ -137,4 +138,92 @@ footer{
     font-size:32px ;
     font-weight: bolder;
     margin-top: 30px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+   
+
+
+.main-participantes{
+    flex-wrap: wrap;
+    justify-content: center;
+    p{
+        text-align: center;
+        font-size: 20px;
+        margin-top: 30px;
+        
+       } 
+    
+       .icon-usuario{
+        width: 35px;
+        margin-top: 20px;
+        display: flex;
+        margin-left: 146px;
+        
+       }
+
+}
+
+
+    
+     
+
+
+
+
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px){
+
+    
+
+    .main-participantes{
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        p{
+            text-align: center;
+            font-size: 20px;
+            margin-top: 30px;
+            
+           } 
+        
+           .icon-usuario{
+            width: 35px;
+            margin-top: 20px;
+            display: flex;
+            margin-left: 146px;
+            
+           }
+    
+    }
+   
+    
+    
+}
+
+/* celular */
+
+@media screen and (max-width: 576px){
+    .main-participantes{
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        p{
+            text-align: center;
+            font-size: 20px;
+            margin-top: 30px;
+            
+           } 
+        
+           .icon-usuario{
+            width: 35px;
+            margin-top: 20px;
+            display: flex;
+            margin-left: 146px;
+            
+           }
+    
+    }
+   
 }
