@@ -28,6 +28,9 @@ nav{grid-area: nav;}
 footer{grid-area: footer;}
 
 
+
+
+
 header{
     background-color: #34B5E6;
     display: flex;
@@ -339,6 +342,7 @@ footer{
         
     }
 }
+
 
 
 
