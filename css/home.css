@@ -27,16 +27,19 @@ nav{grid-area: nav;}
 .section3{grid-area: section3;}
 footer{grid-area: footer;}
 
+
 header{
     background-color: #34B5E6;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    h1{
-        color: white;
-    }
    
+   
+}
+
+header  h1{
+    color: white;
 }
 
 .login{
@@ -49,12 +52,14 @@ header{
     border:none;
    
 
-    a{
-        text-decoration: none;
-        font-weight: 600;
-        color:#34B5E6;
-    
-    }
+   
+}
+
+.login a{
+    text-decoration: none;
+    font-weight: 600;
+    color:#34B5E6;
+
 }
 
 .login:hover{
@@ -70,34 +75,29 @@ header{
 nav{
 
     background-color:#eeeeee;
-
-    ul{
-        display: flex;
-       justify-content:space-evenly;
        
-    }
-
-    li{
-        list-style: none;
-        padding: 6px;
-        
-        
-        a{
-            text-decoration: none;
-            font-weight: bold;
-            color: #1a3b5c;
-            
-            
-            
-        }
-
-        a:hover{
-            color: #34B5E6;
-            transition: all 0.3s ease;
-        }
-    }
 }
-  
+nav ul  li{
+    list-style: none;
+    padding: 6px;}
+
+nav ul{
+    display: flex;
+   justify-content:space-evenly;
+   
+}
+nav ul li   a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #1a3b5c;
+    
+    
+    
+}
+nav ul li a:hover{
+    color: #34B5E6;
+    transition: all 0.3s ease;
+}
 
 #chat:hover{
     background-color: #34B5E6;
@@ -118,15 +118,15 @@ nav{
 
 .section1{
     width: 50%;
-    h2{
-        font-size: 48px;
-    }
-
-    p{
-        font-size: 32px;
-        margin-top: 30px;
-        padding-right: 30px ;
-    }
+  
+}
+.section1  h2{
+    font-size: 48px;
+}
+.section1  p{
+    font-size: 32px;
+    margin-top: 30px;
+    padding-right: 30px ;
 }
 
 .section2{
@@ -138,22 +138,26 @@ nav{
     text-align: center;
     color: white;
     border-radius: 20px;
-    img{
-        width: 120px;
-        margin-top: 30px;
-    }
-    p{
-        padding: 30px;
-    }
+    
+ 
+}
 
-    button{
-        padding: 5px;
-        width: 50%;
-        font-size: 20px;
-        border-radius: 30px;
-        margin-bottom: 30px;
-        transition: all 0.9s;
-    }
+.chatbot  img{
+    width: 120px;
+    margin-top: 30px;
+}
+
+.chatbot p{
+    padding: 30px;
+}
+
+.chatbot button{
+    padding: 5px;
+    width: 50%;
+    font-size: 20px;
+    border-radius: 30px;
+    margin-bottom: 30px;
+    transition: all 0.9s;
 }
 
 .icon{
@@ -206,10 +210,9 @@ footer{
         display: flex;
     }
     
-    .section1{
-        p{
-            font-size: 26px;
-        }
+    .section1 p{
+         font-size: 26px;
+    
     }
 }
 
@@ -255,27 +258,28 @@ footer{
    
     .section1{
         width: 100%;
-        h2{
-            text-align: center;
-        }
-        p{
-            text-align: center;
-            font-size: 25px;
-        }
+       
+    }
+    .section1 h2{
+        text-align: center;
+    }
+    .section1 p{
+        text-align: center;
+        font-size: 25px;
     }
 
     .section2{
         width: 100%;
         margin-top: 30px;
-        p{
-            font-size: 20px;
-        }
+       
+    }
+    .section2 p{
+        font-size: 20px;
     }
 
-    .section3{
-        p{
-            font-size: 14px;
-        }
+    .section3 p{
+        
+            font-size: 14px; 
     }
     
 }
@@ -299,39 +303,40 @@ footer{
     }
     .section1{
         width: 100%;
-        h2{
-            text-align: center;
-            font-size: 40px;
-        }
-        p{
-            text-align: center;
-            font-size: 25px;
-        }
+      
+       
+    }
+    .section1 h2{
+        text-align: center;
+        font-size: 40px;
+    }
+    .section1 p{
+        text-align: center;
+        font-size: 25px;
     }
 
     .section2{
         width: 100%;
         margin-top: 30px;
-        p{
-            font-size: 20px;
-        }
+      
+    }
+    .section2  p{
+        font-size: 20px;
     }
 
-    .section3{
-        p{
-            font-size: 14px;
-            
-        }
-        .cartoes{
-            display: block;
-            
-            p{
-                text-align: center;
+    .section3 .cartoes{ 
+        display: block;        
+        
+    }
+     .cartoes p{
+         text-align: center;
             }
-            img{
-                margin-top: 30px;
-            }
-        }
+    .cartoes img{
+        margin-top: 30px;
+    }
+    .section3  p{
+        font-size: 14px;
+        
     }
 }
 

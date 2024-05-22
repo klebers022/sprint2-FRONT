@@ -1,5 +1,8 @@
 
 
+
+
+
 let chatInstance = null;
 
 window.watsonAssistantChatOptions = {
@@ -24,4 +27,6 @@ document.getElementById('chat').addEventListener('click', function() {
         chatInstance.openWindow(); // Abre a janela do chat quando o botão é clicado
     }
 });
+
+
 
