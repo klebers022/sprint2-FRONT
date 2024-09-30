@@ -125,12 +125,28 @@ nav ul li a:hover{
     
 }
 
+
 footer{
+    background-color: #003060;
+    color: white;
     text-align: center;
-    font-size:32px ;
-    font-weight: bolder;
-    margin-top: 30px;
+    padding: 20px;
+    margin-top: 50px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
+
+.container-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-footer p{
+    margin-top: 20px;
+}
+
 
 @media screen and (min-width: 768px) and (max-width: 991px){
    

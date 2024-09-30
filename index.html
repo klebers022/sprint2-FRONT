@@ -26,7 +26,7 @@
     <header>
       <img
         class="logo"
-        src="/assets/logo-helpcar.png"
+        src="assets\logo-helpcar (1).png"
         width="100px"
         alt="Logo da help car"
       />
@@ -43,16 +43,18 @@
     <main class="main-pg1">
       <div class="container">
         <section class="section1">
-          <h2>Projeto Challenge</h2>
+          <h2 id="typing"></h2>
+
+
           <p>
             Solucione qualquer problema de seu carro com inteligência artificial
-            sa HelpCar
+            da HelpCar
           </p>
         </section>
         <section class="section2">
           <div class="chatbot">
-            <img src="/assets/logo-helpcar.png" alt="logo-helpcar" />
-            <h2>CHAT BOT</h2>
+            <img src="assets\logo-helpcar (1).png" alt="logo-helpcar" />
+            <h2>HELP CAR</h2>
             <p>
               Descubra seu problema com apenas um clique com a ajuda da help car
               tudo fica mais facil
@@ -70,34 +72,68 @@
               alt="engrenagem azul"
             />
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo
-              laudantium vitae quia commodi, doloribus ipsam. Fuga error nam,
-              aliquid laboriosam quas est esse cumque officiis voluptate
-              deserunt eius sunt reprehenderit.
+              Nossa plataforma conecta você às melhores oficinas mecânicas,
+              garantindo serviço de qualidade onde quer que você esteja
             </p>
           </div>
           <div class="cartao2">
             <img class="icon" src="/assets/carro.png" alt="carro azul" />
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum
-              reiciendis tenetur, voluptatum dignissimos consequuntur officia
-              necessitatibus laborum beatae maiores eum mollitia, repellendus
-              iusto molestiae repudiandae, voluptatem dolore tempora voluptas
-              quo!
+              Nosso chatbot utiliza inteligência artificial para diagnósticos
+              rápidos e eficientes, oferecendo suporte via texto, áudio e
+              análise de imagens de problemas do veículo.
             </p>
           </div>
           <div class="cartao3">
             <img class="icon" src="/assets/carregando.png" alt="Bateria azul" />
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Voluptatum illo odit soluta quo odio quisquam commodi ad at
-              dolores alias id harum, aut cupiditate repudiandae cumque a
-              aspernatur fugiat ipsa.
+              Trabalhamos com estoque mínimo de peças, adquirindo-as sob demanda
+              após a confirmação do agendamento, economizando capital e
+              garantindo eficiência.
             </p>
           </div>
         </div>
       </section>
+      <section class="section4">
+        <div class="container_foto">
+          <div class="area_foto">
+            <div class="tirar_foto">
+              <h1>Tire uma foto do seu painel e descubra o que significa!</h1>
+              <p>Nosso sistema inteligente analisa as luzes acesas no seu painel e te dá um diagnóstico preciso com soluções e orçamento.</p>
+              <button id="enviar_foto">Abrir Câmera</button>
+            </div>
+            <div class="resposta_foto">
+              <video id="video" autoplay></video>
+              <canvas id="canvas" style="display: none"></canvas>
+              <img
+                class="imagem"
+                id="imagem"
+                src="https://i.imgur.com/ekJCbuk.jpeg"
+                alt="Imagem do painel"
+              />
+              <h2>Diagnóstico</h2>
+              <p>O problema detectado é:...</p>
+              <h2>Soluções</h2>
+              <p>Sugestões para resolver o problema:...</p>
+              <h2>Orçamento</h2>
+              <p>O custo estimado para o reparo é:...</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer>1TDSPJ</footer>
+    <footer>
+      <div class="container-footer">
+        <div class="text-footer">
+          <h2>Contato</h2>
+          <p>
+            Entre em contato conosco para mais informações sobre nossos serviços
+            e parcerias.
+          </p>
+          <p>
+            <strong>Email:</strong>
+          </div>
+        </div>
+    </footer>
   </body>
 </html>
