@@ -5,18 +5,20 @@ const tirarFotoBtn = document.getElementById('enviar_foto');
 
 let isCameraActive = false; // Estado para controlar o fluxo de cliques
 
-// Função para iniciar a câmera
+// Função para iniciar a câmera traseira
 function startCamera() {
-    navigator.mediaDevices.getUserMedia({ video: true })
-        .then((stream) => {
-            video.style.display = 'block'; // Exibir o vídeo quando a câmera estiver ativa
-            imagem.style.display = 'none'; // Ocultar a imagem quando a câmera for ativada
-            video.srcObject = stream;
-        })
-        .catch((error) => {
-            console.error('Erro ao acessar a câmera: ', error);
-            alert('Não foi possível acessar a câmera. Verifique as permissões.');
-        });
+    navigator.mediaDevices.getUserMedia({ 
+        video: { facingMode: { exact: "environment" } } // Especifica a câmera traseira
+    })
+    .then((stream) => {
+        video.style.display = 'block'; // Exibir o vídeo quando a câmera estiver ativa
+        imagem.style.display = 'none'; // Ocultar a imagem quando a câmera for ativada
+        video.srcObject = stream;
+    })
+    .catch((error) => {
+        console.error('Erro ao acessar a câmera: ', error);
+        alert('Não foi possível acessar a câmera. Verifique as permissões.');
+    });
 }
 
 // Função para tirar foto
@@ -40,6 +42,9 @@ function tirarFoto() {
         imagem.style.display = 'block'; // Mostrar a imagem após a foto ser tirada
         tirarFotoBtn.textContent = 'Abrir câmera'; // Resetar o botão para abrir a câmera novamente
         isCameraActive = false; // Resetar o estado
+
+        // Parar o stream da câmera após tirar a foto (opcional)
+        video.srcObject.getTracks().forEach(track => track.stop());
     } else {
         alert('A câmera ainda não está pronta. Tente novamente em instantes.');
     }
